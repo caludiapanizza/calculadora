@@ -19,12 +19,12 @@ if st.button("calcular"):
 
 elif  operacion == "Resta":
     resultado = numero1 - numero2
-    st.success("f mia, la resta es {resultado}")
+    st.success(f"mia, la resta es {resultado}")
 
 
 elif  operacion == "multiplicacion":
     resultado = numero1 * numero2
-    st.success("f mia, la multiplicacion es {resultado}")
+    st.success(f"mia, la multiplicacion es {resultado}")
 
 elif  operacion == "division":
     if numero2 == 0:
@@ -33,7 +33,7 @@ elif  operacion == "division":
         resultado = numero1 / numero2
         st.success(f"mia, la division es: {resultado}")
     else:
-    st.write("Primero escribi tu nombre arriba")
+        st.write("Primero escribi tu nombre arriba")
     
 
 
