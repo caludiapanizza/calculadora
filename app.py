@@ -1,5 +1,5 @@
 st.title(" Mi aplicacion- calculadora")
-st.write("Bienvenidos, padres , proyecto de Informatica - 9°")
+st.write("Bienvenidos, padres , proyecto de Informatica 9-°")
 
 nombre= st.text_input("¿Cual es el nombre?")
 
@@ -10,9 +10,6 @@ suma(3, 4)
 
 
 def resta(num1, num2):
-    print(num1 - num2)
-    
-resta(6, 7)
 
 def multiplicacion(num1, num2):
     print(num1 * num2)
@@ -41,6 +38,3 @@ def division(num1, num2):
 
         
     
-
-
-        
