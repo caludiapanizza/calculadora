@@ -5,8 +5,8 @@ st.write("Bienvenidos, padres , proyecto de Informatica 9-°")
 nombre= st.text_input("¿Cual es el nombre?")
 st.write("Hola " , nombre)
 
- def suma(num1, num2):
-     st.write(num1 + num2)
+def suma(num1, num2):
+    st.write(num1 + num2)
 
 suma(3, 4)
 
