@@ -1,4 +1,4 @@
-import streamlit as s
+import streamlit as st
 st.title("Calculadora")
 
 nombre= st.text_input("¿como te llamas?.Escribi tu nombre aca:")
