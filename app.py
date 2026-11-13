@@ -31,7 +31,7 @@ def division(num1, num2):
         st.write(" resta", resta(6,7))
 
         
-    if st.button("Ver multiplicacion")
+    if st.button("Ver multiplicacion"):
         st.write(" multiplicacion", multiplicacion(2, 2))
 
     
