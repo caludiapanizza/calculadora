@@ -32,8 +32,7 @@ elif  operacion == "division":
     else:
         resultado = numero1 / numero2
         st.success(f"mia, la division es: {resultado}")
-    else:
-        st.write("Primero escribi tu nombre arriba")
+    
     
 
 
