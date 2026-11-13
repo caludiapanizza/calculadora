@@ -1,43 +1,40 @@
-import streamlit as st
-st.title(" Mi aplicacion- calculadora")
-st.write("Bienvenidos, padres , proyecto de Informatica 9-°")
+import streamlit as s
+st.title("Calculadora")
 
-nombre= st.text_input("¿Cual es el nombre?")
-st.write("Hola " , nombre)
+nombre= st.text_input("¿como te llamas?.Escribi tu nombre aca:")
 
-def suma(num1, num2):
-    st.write(num1 + num2)
+if nombre:
+    st.write("Hola mia  que lindo que estes aca")
+    st.write("Vamos a calcular juntos")
 
-suma(3, 4)
+numero1 = st.number_input("Pone el primer numero:" , value=0)
+numero2 = st.number_input("Pone el segundo numero:" , value=0)
+
+operacion = st.selectbox("¿Que queres hacer?" ,[ "suma", "resta","multiplicacion," "division"])
+
+if st.button("calcular"):
+    if operacion == "suma":
+        resultado = numero1 + numero2
+        st.success(f"mia , la suma es: {resultado}")
+
+elif  operacion == "Resta":
+    resultado = numero1 - numero2
+    st.success("f mia, la resta es {resultado}")
 
 
-def resta(num1, num2):
- st.write(num1 - num2)
+elif  operacion == "multiplicacion":
+    resultado = numero1 * numero2
+    st.success("f mia, la multiplicacion es {resultado}")
 
-def multiplicacion(num1, num2):
-    st.write(num1 * num2)
+elif  operacion == "division":
+    if numero2 == 0:
+        st.error("No se puede dividir entre 0")
+    else:
+        resultado = numero1 / numero2
+        st.success(f"mia, la division es: {resultado}")
+    else:
+    st.write("Primero escribi tu nombre arriba")
     
-multiplicacion(2, 2)
-
-def division(num1, num2):
-    st.write(num1 / num2)
 
 
-    if st.button("Ver suma"):
-        st.write(" suma", suma(3, 4))
 
-        
-    if st.button("Ver resta"):
-        st.write(" resta", resta(6,7))
-
-        
-    if st.button("Ver multiplicacion"):
-        st.write(" multiplicacion", multiplicacion(2, 2))
-
-    
-    if st.button("Ver division"):
-        st.write(" division", division(5, 6))
-        
-
-        
-    
